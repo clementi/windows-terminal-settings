@@ -1,0 +1,881 @@
+{
+    "$schema": "https://aka.ms/terminal-profiles-schema",
+    "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+    "initialCols": 120,
+    "initialRows": 50,
+    /*,
+        {
+            "background": "#1d1f21",
+            "black": "#282a2e",
+            "blue": "#5f819d",
+            "brightBlack": "#373b41",
+            "brightBlue": "#81a2be",
+            "brightCyan": "#8abeb7",
+            "brightGreen": "#b5bd68",
+            "brightPurple": "#b294bb",
+            "brightRed": "#cc6666",
+            "brightWhite": "#c5c8c6",
+            "brightYellow": "#f0c674",
+            "cyan": "#5e8d87",
+            "foreground": "#c5c8c6",
+            "green": "#8c9440",
+            "name": "One Half Dark",
+            "purple": "#85678f",
+            "red": "#a54242",
+            "white": "#707880",
+            "yellow": "#de935f"
+        } */// Add any keybinding overrides to this array.
+    // To unbind a default keybinding, set the command to "unbound"
+    "keybindings": [],
+    "profiles": 
+    {
+        "defaults": 
+        {
+            "antialiasingMode": "cleartype",
+            "colorScheme": "Material Shell Dark",
+            "cursorColor": "#FF443E",
+            "cursorShape": "filledBox",
+            "fontFace": "JetBrains Mono NL",
+            "fontSize": 10
+        },
+        "list": 
+        [
+            {
+                "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+                "hidden": false,
+                "name": "PowerShell Core",
+                "source": "Windows.Terminal.PowershellCore"
+            },
+            {
+                "commandline": "wsl ~",
+                "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+                "hidden": false,
+                "icon": "c:/Users/jeff/Pictures/icons/ubuntu-logo32-32x32.png",
+                "name": "Ubuntu",
+                "source": "Windows.Terminal.Wsl",
+                "startingDirectory": null
+            },
+            {
+                "commandline": "wsl /usr/bin/byobu",
+                "guid": "{47f60ce6-0568-40dc-a137-742fa4f2cefa}",
+                "hidden": false,
+                "icon": "c:/Users/jeff/Pictures/icons/ubuntu-logo32-32x32.png",
+                "name": "Ubuntu & byobu",
+                "startingDirectory": null
+            },
+            {
+                "commandline": "nu",
+                "guid": "{ace1ac14-2a4e-4fec-894b-b83b7a2df9c5}",
+                "hidden": false,
+                "icon": "c:/Users/jeff/Pictures/icons/nushell-32x32.png",
+                "name": "Nushell",
+                "startingDirectory": "c:/Users/Jeff"
+            },
+            {
+                "commandline": "wsl /home/jeff/.cargo/bin/nu",
+                "guid": "{2965e64e-2ff0-485b-a914-5249580a7fad}",
+                "hidden": false,
+                "icon": "c:/Users/jeff/Pictures/icons/nushell-32x32.png",
+                "name": "Nushell (WSL)",
+                "startingDirectory": "//wsl$/Ubuntu-18.04/home/jeff"
+            },
+            {
+                "commandline": "ghci.exe",
+                "guid": "{33188f31-6f87-4b4e-a669-925ba6f1afd6}",
+                "hidden": false,
+                "icon": "c:/Users/jeff/Pictures/icons/haskell_logo-32x32.png",
+                "name": "Haskell"
+            },
+            {
+                "commandline": "bash -il ghci",
+                "guid": "{32164789-7f80-4bc4-b3a3-778d62af610a}",
+                "hidden": false,
+                "icon": "c:/Users/jeff/Pictures/icons/haskell_logo-32x32.png",
+                "name": "Haskell (WSL)"
+            },
+            {
+                "commandline": "scala.bat",
+                "guid": "{a7f1231b-7586-4c4b-8a3f-bf8bc704046f}",
+                "hidden": false,
+                "icon": "c:/Users/jeff/Pictures/icons/scala-spiral-32x32.png",
+                "name": "Scala"
+            },
+            {
+                "commandline": "amm.bat",
+                "guid": "{d3948a2d-6e55-404e-a941-dd0f3b878c4a}",
+                "hidden": false,
+                "icon": "c:/Users/jeff/Pictures/icons/scala-spiral-32x32.png",
+                "name": "Scala (Ammonite)"
+            },
+            {
+                "commandline": "bash -il scala",
+                "guid": "{737baf5c-6c3a-42b3-905d-d530be97a55f}",
+                "hidden": false,
+                "icon": "c:/Users/jeff/Pictures/icons/scala-spiral-32x32.png",
+                "name": "Scala (WSL)"
+            },
+            {
+                "commandline": "bash -il /home/jeff/.local/share/coursier/bin/amm",
+                "guid": "{f4126659-a967-42fa-a598-978b3a1b6d0d}",
+                "hidden": false,
+                "icon": "c:/Users/jeff/Pictures/icons/scala-spiral-32x32.png",
+                "name": "Scala (WSL, Ammonite)"
+            },
+            {
+                "commandline": "dotty-repl.bat",
+                "guid": "{7af06a8e-30af-4c09-aa6d-df52343872b1}",
+                "hidden": false,
+                "icon": "c:/Users/jeff/Pictures/icons/dotty-32x32.png",
+                "name": "Scala (Dotty)"
+            },
+            {
+                "commandline": "bash -l -c /opt/scala3-3.0.0/bin/scala",
+                "guid": "{8ca2b332-da95-4332-a6b3-3eb201c9f276}",
+                "hidden": false,
+                "icon": "c:/Users/jeff/Pictures/icons/dotty-32x32.png",
+                "name": "Scala 3 (WSL)"
+            },
+            {
+                "commandline": "powershell.exe Invoke-Clojure",
+                "guid": "{4aa80a0f-08b2-44cc-be4a-c93eca4fca1b}",
+                "hidden": false,
+                "icon": "c:/Users/jeff/Pictures/icons/Clojure_logo.svg-32x32.png",
+                "name": "Clojure"
+            },
+            {
+                "commandline": "bash -il clj",
+                "guid": "{194a6017-5f42-404b-889e-f35c4f548bbc}",
+                "hidden": false,
+                "icon": "c:/Users/jeff/Pictures/icons/Clojure_logo.svg-32x32.png",
+                "name": "Clojure (WSL)"
+            },
+            {
+                "commandline": "bash -il lein repl",
+                "guid": "{55c0aba5-122f-454f-a139-fd8171bc51ce}",
+                "hidden": false,
+                "icon": "c:/Users/jeff/Pictures/icons/Clojure_logo.svg-32x32.png",
+                "name": "Clojure (WSL, Leiningen)"
+            },
+            {
+                "commandline": "c:/Users/Jeff/.dotnet/tools/Clojure.Main.exe",
+                "guid": "{3f8d9c92-abf7-4b5f-830c-39f734b2d890}",
+                "hidden": false,
+                "icon": "c:/Users/jeff/Pictures/icons/Clojure_logo.svg-32x32.png",
+                "name": "Clojure CLR"
+            },
+            {
+                "commandline": "bash -il cljclr",
+                "guid": "{26f0116b-997b-4651-8090-f0da62cafeeb}",
+                "hidden": true,
+                "icon": "c:/Users/jeff/Pictures/icons/Clojure_logo.svg-32x32.png",
+                "name": "Clojure CLR (WSL)"
+            },
+            {
+                "commandline": "bash -l -c bb",
+                "guid": "{e1f49125-9d84-4141-b51b-64337a127a98}",
+                "hidden": false,
+                "icon": "c:/Users/jeff/Pictures/icons/babasha-icon-32x32.png",
+                "name": "Babashka (WSL)"
+            },
+            {
+                "commandline": "bash -l -c joker",
+                "guid": "{c2fca5f6-8486-41a6-862e-1473649dd6df}",
+                "hidden": false,
+                "icon": "c:/Users/jeff/Pictures/icons/joker-logo-32x32.png",
+                "name": "Joker (WSL)"
+            },
+            {
+                "commandline": "c:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/FSharp/fsi.exe",
+                "guid": "{bdefa8ec-f0db-4b39-9ce8-02d1db2d07ec}",
+                "hidden": false,
+                "icon": "c:/Users/jeff/Pictures/icons/fsharp-logo-32x32.png",
+                "name": "F#"
+            },
+            {
+                "commandline": "bash -l -c \"dotnet fsi\"",
+                "guid": "{2201e793-f4f7-4991-ae1a-0a8f29b977ce}",
+                "hidden": false,
+                "icon": "c:/Users/jeff/Pictures/icons/fsharp-logo-32x32.png",
+                "name": "F# (WSL)"
+            },
+            {
+                "commandline": "bash -il -c /home/jeff/.opam/ocaml/bin/ocaml",
+                "guid": "{e113d69b-8093-47a0-bc8c-1d2c25880e29}",
+                "hidden": false,
+                "icon": "c:/Users/jeff/Pictures/icons/ocaml-logo-32x32.png",
+                "name": "OCaml (WSL)"
+            },
+            {
+                "commandline": "bash -il -c /home/jeff/.opam/ocaml/bin/utop",
+                "guid": "{682f8288-e5b0-42d7-8f03-a96d8cd12199}",
+                "hidden": false,
+                "icon": "c:/Users/jeff/Pictures/icons/ocaml-logo-32x32.png",
+                "name": "OCaml (WSL, utop)"
+            },
+            {
+                "commandline": "bash -il -c \"rlwrap poly\"",
+                "guid": "{faa82362-bf7f-42d9-a713-db6670cbbf52}",
+                "hidden": false,
+                "icon": "c:/Users/jeff/Pictures/icons/Poly_Parrot3-32x32.png",
+                "name": "Poly/ML (WSL)"
+            },
+            {
+                "commandline": "C:/Program Files (x86)/SMLNJ/bin/sml.bat",
+                "guid": "{d58c7f14-a408-4856-a719-8f6759243b7f}",
+                "hidden": false,
+                "icon": "c:/Users/jeff/Pictures/icons/smlnj-logo-32x32.png",
+                "name": "SML/NJ"
+            },
+            {
+                "commandline": "c:/Users/Jeff/bin/mosml.cmd",
+                "guid": "{eb4e339d-368f-4709-94dc-020313f8f8a4}",
+                "hidden": false,
+                "name": "Moscow ML"
+            },
+            {
+                "commandline": "pure",
+                "guid": "{c8de0ea1-e0d7-48f6-8e4e-2c5f3e665d7b}",
+                "hidden": false,
+                "icon": "c:/Users/jeff/Pictures/icons/Pure_lang_logo-32x32.png",
+                "name": "Pure"
+            },
+            {
+                "commandline": "bash -il -c pure",
+                "guid": "{40c25349-9a2e-47c4-9daf-73c9af05e2bc}",
+                "hidden": false,
+                "icon": "c:/Users/jeff/Pictures/icons/Pure_lang_logo-32x32.png",
+                "name": "Pure (WSL)"
+            },
+            {
+                "commandline": "bash -il -c gprolog",
+                "guid": "{a28b062e-ad3c-4147-8be1-3aab075e3321}",
+                "hidden": false,
+                "icon": "c:/Users/jeff/Pictures/icons/gprolog-32x32.png",
+                "name": "GNU Prolog (WSL)"
+            },
+            {
+                "commandline": "bash -il -c swipl",
+                "guid": "{5e61784c-78ca-452d-b681-d4c6fab0e678}",
+                "hidden": false,
+                "icon": "c:/Users/jeff/Pictures/icons/swi-prolog-32x32.png",
+                "name": "SWI-Prolog (WSL)"
+            },
+            {
+                "commandline": "c:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/bin/Roslyn/csi.exe",
+                "guid": "{735f79c7-a69a-42c3-8ce8-88300486873c}",
+                "hidden": false,
+                "icon": "c:/Users/jeff/Pictures/icons/C-Sharp-01-32x32.png",
+                "name": "C#"
+            },
+            {
+                "commandline": "ipython.exe",
+                "guid": "{c6f801c4-16f0-4106-9532-15a2b2aede0b}",
+                "hidden": false,
+                "icon": "c:/Users/jeff/Pictures/icons/python-logo-32x32.png",
+                "name": "Python (IPython)"
+            },
+            {
+                "commandline": "bash -c /home/jeff/.local/bin/ipython",
+                "guid": "{2481c5a1-3c1e-4528-9b48-a2cd7c871b8a}",
+                "hidden": false,
+                "icon": "c:/Users/jeff/Pictures/icons/python-logo-32x32.png",
+                "name": "Python (WSL, IPython)"
+            },
+            {
+                "commandline": "bash -c /home/jeff/.local/bin/bpython",
+                "guid": "{31888df5-6c7c-4d48-9928-3f4cee07ce37}",
+                "hidden": false,
+                "icon": "c:/Users/jeff/Pictures/icons/python-logo-32x32.png",
+                "name": "Python (WSL, bpython)"
+            },
+            {
+                "commandline": "pypy3",
+                "guid": "{ba1b5e0b-26c5-4522-adb0-7e074f4d36e3}",
+                "hidden": false,
+                "icon": "c:/Users/jeff/Pictures/icons/pypy-logo-32x32.jpg",
+                "name": "PyPy 3"
+            },
+            {
+                "commandline": "bash -l -c pypy3",
+                "guid": "{3912edbf-8093-472c-8a8c-3147d94e799b}",
+                "hidden": false,
+                "icon": "c:/Users/jeff/Pictures/icons/pypy-logo-32x32.jpg",
+                "name": "PyPy 3 (WSL)"
+            },
+            {
+                "commandline": "powershell -Command irb",
+                "guid": "{79654a74-1852-4e7a-8f2c-f4fd35137c70}",
+                "hidden": false,
+                "icon": "c:/Users/jeff/Pictures/icons/ruby-logo-32x32.png",
+                "name": "Ruby"
+            },
+            {
+                "commandline": "papyrus",
+                "guid": "{2f266a1d-8f67-48b8-b81b-f0b485888f49}",
+                "hidden": false,
+                "icon": "c:/Users/jeff/Pictures/icons/rust-logo-blk-32x32.png",
+                "name": "Papyrus (Rust)"
+            },
+            {
+                "commandline": "C:/Program Files/Microsoft/R Open/R-3.5.3/bin/R.exe",
+                "guid": "{a79ec738-ec6d-4ad1-a625-15449a02388d}",
+                "hidden": false,
+                "icon": "c:/Users/jeff/Pictures/icons/ClarkHead.png",
+                "name": "R Open"
+            },
+            {
+                "commandline": "c:/Users/jeff/appdata/local/Programs/julia/Julia-1.4.2/bin/julia.exe",
+                "guid": "{ea0ffe64-75d9-4b93-9a03-7ee4f3627008}",
+                "hidden": false,
+                "icon": "c:/Users/jeff/Pictures/icons/julia.png",
+                "name": "Julia"
+            },
+            {
+                "commandline": "lua.cmd",
+                "guid": "{25ff07f3-435d-4603-9912-ff2f29c46c4d}",
+                "hidden": false,
+                "icon": "c:/Users/jeff/Pictures/icons/Lua-logo-nolabel-32x32.jpg",
+                "name": "Lua"
+            },
+            {
+                "commandline": "idris.cmd",
+                "guid": "{c1855b7e-5f4e-41c3-9c06-19a473b5c13c}",
+                "hidden": false,
+                "icon": "c:/Users/jeff/Pictures/icons/idris-32x32.png",
+                "name": "Idris"
+            },
+            {
+                "commandline": "bash -il idris",
+                "guid": "{39880d18-362c-41df-a390-208ff9a1c012}",
+                "hidden": true,
+                "icon": "c:/Users/jeff/Pictures/icons/idris-32x32.png",
+                "name": "Idris (WSL)"
+            },
+            {
+                "commandline": "c:/Users/jeff/AppData/Roaming/cabal/bin/agda.exe -I",
+                "guid": "{b376bab6-41c2-43c9-9eb6-6d6776999038}",
+                "hidden": false,
+                "icon": "c:/Users/jeff/Pictures/icons/agda_icon_132608.png",
+                "name": "Agda"
+            },
+            {
+                "commandline": "fregec.cmd",
+                "guid": "{2860cffa-b938-4bd7-b3e2-3f0ada64a2c4}",
+                "hidden": false,
+                "icon": "c:/Users/jeff/Pictures/icons/Frege_logo_flat_colours-32x32.png",
+                "name": "Frege"
+            },
+            {
+                "commandline": "bash -il fregec",
+                "guid": "{61bac08c-db86-4974-bde4-5c248099551d}",
+                "hidden": true,
+                "icon": "c:/Users/jeff/Pictures/icons/Frege_logo_flat_colours-32x32.png",
+                "name": "Frege (WSL)"
+            },
+            {
+                "commandline": "wsl mira",
+                "guid": "{ac8a1f0e-ddcc-463e-802b-7283b2233e7e}",
+                "hidden": false,
+                "name": "Miranda (WSL)"
+            },
+            {
+                "commandline": "bash -l -c clisp",
+                "guid": "{577fcc75-fa18-49a4-8ec2-35f5b0fa6737}",
+                "hidden": false,
+                "icon": "c:/Users/jeff/Pictures/icons/LogoCLISP.jpg",
+                "name": "CLISP (WSL)"
+            },
+            {
+                "commandline": "bash -l -c sbcl",
+                "guid": "{487e618e-37a8-4fbf-ada7-9c8113a49e2e}",
+                "hidden": false,
+                "icon": "c:/Users/jeff/Pictures/icons/sbcl-32x32.png",
+                "name": "SBCL (WSL)"
+            },
+            {
+                "commandline": "c:/emacs/bin/emacs.exe -nw -q --no-splash",
+                "guid": "{d4dd5fd4-82cb-4d23-84ad-bd0d738e2658}",
+                "hidden": false,
+                "icon": "c:/Users/jeff/Pictures/icons/EmacsIcon-32x32.png",
+                "name": "Emacs Lisp"
+            },
+            {
+                "commandline": "racket.cmd",
+                "guid": "{13a16c9c-2ac8-4aff-8083-c1b3c6a986cd}",
+                "hidden": false,
+                "icon": "c:/Users/jeff/Pictures/icons/Racket-logo-32x32.png",
+                "name": "Racket"
+            },
+            {
+                "commandline": "tracket.cmd",
+                "guid": "{e522fc06-c0df-4b59-97f6-8904368161f2}",
+                "hidden": false,
+                "icon": "c:/Users/jeff/Pictures/icons/Racket-logo-32x32.png",
+                "name": "Typed Racket"
+            },
+            {
+                "commandline": "racket.cmd -I r5rs",
+                "guid": "{b8d869e0-e23d-4250-9f36-223eb467bf25}",
+                "hidden": false,
+                "icon": "c:/Users/jeff/Pictures/icons/Racket-logo-32x32.png",
+                "name": "Racket R5RS"
+            },
+            {
+                "commandline": "racket.cmd -I r6rs",
+                "guid": "{7e1b4d45-0691-4d28-a3c4-8258a0193d02}",
+                "hidden": true,
+                "icon": "c:/Users/jeff/Pictures/icons/Racket-logo-32x32.png",
+                "name": "Racket R6RS"
+            },
+            {
+                "commandline": "racket.cmd -I r7rs -e \"(import (scheme base) (scheme write))\" -i",
+                "guid": "{cc614a97-b090-485b-a6bb-57e7afc6e189}",
+                "hidden": false,
+                "icon": "c:/Users/jeff/Pictures/icons/Racket-logo-32x32.png",
+                "name": "Racket R7RS (Small)"
+            },
+            {
+                "commandline": "scheme.cmd",
+                "guid": "{39f4eccc-340d-4ad2-8639-9310a600c36b}",
+                "hidden": false,
+                "icon": "c:/Users/jeff/Pictures/icons/chez-scheme.ico",
+                "name": "Chez Scheme"
+            },
+            {
+                "commandline": "c:/Program Files/Sagittarius/sash.exe",
+                "guid": "{dce13475-68e3-487b-b9c8-b3163668309c}",
+                "hidden": false,
+                "name": "Sagittarius Scheme"
+            },
+            {
+                "commandline": "c:/Program Files/Gauche/bin/gosh.exe",
+                "guid": "{94339224-20dd-4df9-a94a-97043514f15e}",
+                "hidden": false,
+                "icon": "%APPDATA%/Microsoft/Installer/{0A84BAAA-AE60-4332-8F5C-95E128C45B12}/AppIcon.ico",
+                "name": "Gauche Scheme"
+            },
+            {
+                "commandline": "bash -l -c \"rlwrap guile\"",
+                "guid": "{b76741ea-6a71-4b3f-9c09-a176a1e33abe}",
+                "hidden": false,
+                "icon": "c:/Users/jeff/Pictures/icons/guile-32x32.png",
+                "name": "Guile (WSL)"
+            },
+            {
+                "commandline": "bash -l -c mit-scheme",
+                "guid": "{bcf81add-2830-47f6-93d7-906be9344aff}",
+                "hidden": false,
+                "icon": "c:/Users/jeff/Pictures/icons/lambda-32x32.png",
+                "name": "MIT Scheme (WSL)"
+            },
+            {
+                "commandline": "bash -l -c gsi",
+                "guid": "{8d26e806-9b5f-4391-8e20-860387be5891}",
+                "hidden": false,
+                "icon": "c:/Users/jeff/Pictures/icons/gambit-32x32.png",
+                "name": "Gambit Scheme (WSL)"
+            },
+            {
+                "commandline": "bash -l -c gxi",
+                "guid": "{18029d85-92b4-4e6c-bfbf-bcd33bb62565}",
+                "hidden": false,
+                "icon": "c:/Users/jeff/Pictures/icons/gerbil-32x32.png",
+                "name": "Gerbil Scheme (WSL)"
+            },
+            {
+                "commandline": "c:/tools/chicken/bin/csi.exe",
+                "guid": "{3b30d161-4598-46cd-86f3-66457412b93a}",
+                "hidden": false,
+                "icon": "c:/Users/jeff/Pictures/icons/32px-Chicken_Scheme_logo_and_wordmark.svg.png",
+                "name": "Chicken Scheme"
+            },
+            {
+                "commandline": "bash -l -c /opt/kawa-3.1.1/bin/kawa",
+                "guid": "{66823f97-226a-4f83-87f2-253c8b22f761}",
+                "hidden": false,
+                "icon": "c:/Users/jeff/Pictures/icons/kawa-logo-32x32.png",
+                "name": "Kawa (WSL)"
+            },
+            {
+                "commandline": "C:/Users/Jeff/AppData/Local/Programs/IronScheme/IronScheme.Console-v4.exe",
+                "guid": "{ebddd250-7212-4e1d-9b13-2243fe15a2b0}",
+                "hidden": false,
+                "icon": "c:/Users/jeff/Pictures/icons/IronScheme-32x32.png",
+                "name": "IronScheme"
+            },
+            {
+                "commandline": "alice.exe",
+                "guid": "{fcbdacce-c437-41f0-98a2-9eab9fb49855}",
+                "hidden": false,
+                "icon": "C:/Program Files (x86)/Alice/bin/alice.ico",
+                "name": "Alice"
+            },
+            {
+                "commandline": "C:/Users/Jeff/AppData/Local/Programs/coq/bin/coqtop.exe",
+                "guid": "{eb84f6e4-98a4-4f09-99d4-5a7529dce643}",
+                "hidden": false,
+                "icon": "C:/Users/Jeff/AppData/Local/Programs/coq/share/coq.png",
+                "name": "Coq"
+            },
+            {
+                "commandline": "nesh.cmd",
+                "guid": "{dad5b711-8331-4ea9-90c3-84ca4f23c230}",
+                "hidden": false,
+                "icon": "c:/Users/jeff/Pictures/icons/nodejs-logo-32x32.png",
+                "name": "Javascript (Nesh)"
+            },
+            {
+                "commandline": "jshell.exe",
+                "guid": "{ce471101-183c-4ba4-933e-53cf06d0f6d6}",
+                "hidden": false,
+                "icon": "c:/Users/jeff/Pictures/icons/java-32x32.png",
+                "name": "Java"
+            },
+            {
+                "commandline": "bash -il -c swift",
+                "guid": "{96a9118f-67a8-417d-87d5-6c4a673330aa}",
+                "hidden": false,
+                "icon": "c:/Users/jeff/Pictures/icons/Swift_logo-32x32.png",
+                "name": "Swift (WSL)"
+            },
+            {
+                "commandline": "bash -il -c erl",
+                "guid": "{cb53c8e9-ba0d-430d-941d-416278d32373}",
+                "hidden": false,
+                "icon": "c:/Users/jeff/Pictures/icons/erlang-logo-32x32.png",
+                "name": "Erlang (WSL)"
+            },
+            {
+                "commandline": "bash -il -c iex",
+                "guid": "{7c730660-3930-41c4-9a6f-7d5bb9745f91}",
+                "hidden": false,
+                "icon": "c:/Users/jeff/Pictures/icons/elixir-logo-32x32.png",
+                "name": "Elixir (WSL)"
+            },
+            {
+                "commandline": "bash -il -c \"rebar3 lfe repl\"",
+                "guid": "{c00090cc-8cbc-460a-90a2-d2398df241bd}",
+                "hidden": false,
+                "icon": "c:/Users/jeff/Pictures/icons/lfe-logo-32x32.png",
+                "name": "LFE (WSL)"
+            },
+            {
+                "commandline": "bash -il -c gforth",
+                "guid": "{b0b213c9-0961-4a82-91a8-6a781aea7d23}",
+                "hidden": false,
+                "name": "Gforth"
+            },
+            {
+                "commandline": "fac.cmd",
+                "guid": "{3502c992-2c85-4180-a8a2-5b34cf94d6a3}",
+                "hidden": false,
+                "icon": "c:/Users/jeff/Pictures/icons/factor-32x32.png",
+                "name": "Factor "
+            },
+            {
+                "commandline": "bash -il -c \"rlwrap /home/jeff/factor/factor\"",
+                "guid": "{5eff9c2e-2963-4554-a27d-e9e3016c3dae}",
+                "hidden": false,
+                "icon": "c:/Users/jeff/Pictures/icons/factor-32x32.png",
+                "name": "Factor (WSL)"
+            },
+            {
+                "commandline": "raku",
+                "guid": "{c7cf127b-ffef-4cf8-8be3-9692b3cdc4fe}",
+                "hidden": false,
+                "name": "Rakudo"
+            },
+            {
+                "commandline": "bash -il -c \"rlwrap raku\"",
+                "guid": "{118a4cbd-194e-4ede-a015-78aa479ddf0d}",
+                "hidden": false,
+                "name": "Rakudo (WSL)"
+            },
+            {
+                "commandline": "joy.exe",
+                "guid": "{4453e5a1-efde-42cc-888f-63b68579373d}",
+                "hidden": false,
+                "name": "Joy"
+            },
+            {
+                "commandline": "bash -il -c kitten",
+                "guid": "{69b18e3e-3fe3-4e66-9b0e-8bfb78da6ca7}",
+                "hidden": false,
+                "icon": "c:/Users/jeff/Pictures/icons/kitten.ico",
+                "name": "Kitten (WSL)"
+            },
+            {
+                "commandline": "min",
+                "guid": "{0e322790-bcf5-49d8-9ad2-5faf5e2a1ed6}",
+                "hidden": false,
+                "icon": "c:/Users/jeff/Pictures/icons/min-logo-32x32.png",
+                "name": "Min"
+            },
+            {
+                "commandline": "C:/Users/Jeff/AppData/Local/bin/NASM/nasmpath.bat",
+                "guid": "{7dcef107-ca17-489a-957b-c41c668b38b5}",
+                "hidden": true,
+                "icon": "%USERPROFILE%/AppData/Local/bin/NASM/nasm.ico",
+                "name": "NASM Shell"
+            },
+            {
+                "commandline": "aws-shell.exe",
+                "guid": "{cd9f128b-9216-4033-8841-90f72ead85b0}",
+                "hidden": true,
+                "icon": "c:/Users/jeff/Pictures/icons/aws.png",
+                "name": "AWS Shell"
+            },
+            {
+                "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+                "hidden": true,
+                "name": "Azure Cloud Shell",
+                "source": "Windows.Terminal.Azure"
+            },
+            {
+                "commandline": "powershell.exe",
+                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                "hidden": false,
+                "name": "Windows PowerShell"
+            },
+            {
+                "commandline": "cmd.exe",
+                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+                "hidden": false,
+                "name": "cmd"
+            }
+        ]
+    },
+    "schemes": 
+    [
+        {
+            "background": "#0C0C0C",
+            "black": "#0C0C0C",
+            "blue": "#0037DA",
+            "brightBlack": "#767676",
+            "brightBlue": "#3B78FF",
+            "brightCyan": "#61D6D6",
+            "brightGreen": "#16C60C",
+            "brightPurple": "#B4009E",
+            "brightRed": "#E74856",
+            "brightWhite": "#F2F2F2",
+            "brightYellow": "#F9F1A5",
+            "cursorColor": "#FFFFFF",
+            "cyan": "#3A96DD",
+            "foreground": "#CCCCCC",
+            "green": "#13A10E",
+            "name": "Campbell",
+            "purple": "#881798",
+            "red": "#C50F1F",
+            "selectionBackground": "#FFFFFF",
+            "white": "#CCCCCC",
+            "yellow": "#C19C00"
+        },
+        {
+            "background": "#012456",
+            "black": "#0C0C0C",
+            "blue": "#0037DA",
+            "brightBlack": "#767676",
+            "brightBlue": "#3B78FF",
+            "brightCyan": "#61D6D6",
+            "brightGreen": "#16C60C",
+            "brightPurple": "#B4009E",
+            "brightRed": "#E74856",
+            "brightWhite": "#F2F2F2",
+            "brightYellow": "#F9F1A5",
+            "cursorColor": "#FFFFFF",
+            "cyan": "#3A96DD",
+            "foreground": "#CCCCCC",
+            "green": "#13A10E",
+            "name": "Campbell Powershell",
+            "purple": "#881798",
+            "red": "#C50F1F",
+            "selectionBackground": "#FFFFFF",
+            "white": "#CCCCCC",
+            "yellow": "#C19C00"
+        },
+        {
+            "background": "#151515",
+            "black": "#252525",
+            "blue": "#42A5F5",
+            "brightBlack": "#373B41",
+            "brightBlue": "#81A2BE",
+            "brightCyan": "#8ABEB7",
+            "brightGreen": "#B5BD68",
+            "brightPurple": "#B294BB",
+            "brightRed": "#CC6666",
+            "brightWhite": "#C5C8C6",
+            "brightYellow": "#F0C674",
+            "cursorColor": "#FFFFFF",
+            "cyan": "#00ACC1",
+            "foreground": "#A1B0B8",
+            "green": "#C3D82C",
+            "name": "Material Shell Dark",
+            "purple": "#D81B60",
+            "red": "#FF443E",
+            "selectionBackground": "#FFFFFF",
+            "white": "#F5F5F5",
+            "yellow": "#FFC135"
+        },
+        {
+            "background": "#282C34",
+            "black": "#282C34",
+            "blue": "#61AFEF",
+            "brightBlack": "#282C34",
+            "brightBlue": "#61AFEF",
+            "brightCyan": "#56B6C2",
+            "brightGreen": "#98C379",
+            "brightPurple": "#C678DD",
+            "brightRed": "#E06C75",
+            "brightWhite": "#DCDFE4",
+            "brightYellow": "#E5C07B",
+            "cursorColor": "#FFFFFF",
+            "cyan": "#56B6C2",
+            "foreground": "#DCDFE4",
+            "green": "#98C379",
+            "name": "One Half Dark",
+            "purple": "#C678DD",
+            "red": "#E06C75",
+            "selectionBackground": "#FFFFFF",
+            "white": "#DCDFE4",
+            "yellow": "#E5C07B"
+        },
+        {
+            "background": "#FAFAFA",
+            "black": "#383A42",
+            "blue": "#0184BC",
+            "brightBlack": "#4F525D",
+            "brightBlue": "#61AFEF",
+            "brightCyan": "#56B5C1",
+            "brightGreen": "#98C379",
+            "brightPurple": "#C577DD",
+            "brightRed": "#DF6C75",
+            "brightWhite": "#FFFFFF",
+            "brightYellow": "#E4C07A",
+            "cursorColor": "#4F525D",
+            "cyan": "#0997B3",
+            "foreground": "#383A42",
+            "green": "#50A14F",
+            "name": "One Half Light",
+            "purple": "#A626A4",
+            "red": "#E45649",
+            "selectionBackground": "#FFFFFF",
+            "white": "#FAFAFA",
+            "yellow": "#C18301"
+        },
+        {
+            "background": "#002B36",
+            "black": "#002B36",
+            "blue": "#268BD2",
+            "brightBlack": "#073642",
+            "brightBlue": "#839496",
+            "brightCyan": "#93A1A1",
+            "brightGreen": "#586E75",
+            "brightPurple": "#6C71C4",
+            "brightRed": "#CB4B16",
+            "brightWhite": "#FDF6E3",
+            "brightYellow": "#657B83",
+            "cursorColor": "#FFFFFF",
+            "cyan": "#2AA198",
+            "foreground": "#839496",
+            "green": "#859900",
+            "name": "Solarized Dark",
+            "purple": "#D33682",
+            "red": "#DC322F",
+            "selectionBackground": "#FFFFFF",
+            "white": "#EEE8D5",
+            "yellow": "#B58900"
+        },
+        {
+            "background": "#FDF6E3",
+            "black": "#002B36",
+            "blue": "#268BD2",
+            "brightBlack": "#073642",
+            "brightBlue": "#839496",
+            "brightCyan": "#93A1A1",
+            "brightGreen": "#586E75",
+            "brightPurple": "#6C71C4",
+            "brightRed": "#CB4B16",
+            "brightWhite": "#FDF6E3",
+            "brightYellow": "#657B83",
+            "cursorColor": "#002B36",
+            "cyan": "#2AA198",
+            "foreground": "#657B83",
+            "green": "#859900",
+            "name": "Solarized Light",
+            "purple": "#D33682",
+            "red": "#DC322F",
+            "selectionBackground": "#FFFFFF",
+            "white": "#EEE8D5",
+            "yellow": "#B58900"
+        },
+        {
+            "background": "#000000",
+            "black": "#000000",
+            "blue": "#3465A4",
+            "brightBlack": "#555753",
+            "brightBlue": "#729FCF",
+            "brightCyan": "#34E2E2",
+            "brightGreen": "#8AE234",
+            "brightPurple": "#AD7FA8",
+            "brightRed": "#EF2929",
+            "brightWhite": "#EEEEEC",
+            "brightYellow": "#FCE94F",
+            "cursorColor": "#FFFFFF",
+            "cyan": "#06989A",
+            "foreground": "#D3D7CF",
+            "green": "#4E9A06",
+            "name": "Tango Dark",
+            "purple": "#75507B",
+            "red": "#CC0000",
+            "selectionBackground": "#FFFFFF",
+            "white": "#D3D7CF",
+            "yellow": "#C4A000"
+        },
+        {
+            "background": "#FFFFFF",
+            "black": "#000000",
+            "blue": "#3465A4",
+            "brightBlack": "#555753",
+            "brightBlue": "#729FCF",
+            "brightCyan": "#34E2E2",
+            "brightGreen": "#8AE234",
+            "brightPurple": "#AD7FA8",
+            "brightRed": "#EF2929",
+            "brightWhite": "#EEEEEC",
+            "brightYellow": "#FCE94F",
+            "cursorColor": "#000000",
+            "cyan": "#06989A",
+            "foreground": "#555753",
+            "green": "#4E9A06",
+            "name": "Tango Light",
+            "purple": "#75507B",
+            "red": "#CC0000",
+            "selectionBackground": "#FFFFFF",
+            "white": "#D3D7CF",
+            "yellow": "#C4A000"
+        },
+        {
+            "background": "#000000",
+            "black": "#000000",
+            "blue": "#000080",
+            "brightBlack": "#808080",
+            "brightBlue": "#0000FF",
+            "brightCyan": "#00FFFF",
+            "brightGreen": "#00FF00",
+            "brightPurple": "#FF00FF",
+            "brightRed": "#FF0000",
+            "brightWhite": "#FFFFFF",
+            "brightYellow": "#FFFF00",
+            "cursorColor": "#FFFFFF",
+            "cyan": "#008080",
+            "foreground": "#C0C0C0",
+            "green": "#008000",
+            "name": "Vintage",
+            "purple": "#800080",
+            "red": "#800000",
+            "selectionBackground": "#FFFFFF",
+            "white": "#C0C0C0",
+            "yellow": "#808000"
+        }
+    ]
+}
